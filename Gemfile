@@ -1,40 +1,48 @@
 source 'https://rubygems.org'
+ruby '2.1.7'
 
+gem 'rails', '~> 4.1'
+#rails gems that got pulled out
+gem 'protected_attributes'
+gem 'rails-observers'
+gem 'actionpack-page_caching'
+gem 'actionpack-action_caching'
+gem 'activerecord-deprecated_finders'
+gem 'activejob_backport'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.12'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
+gem 'puma'
+gem 'sass-rails', '~> 5.0.0.beta1'
+gem 'rake'
+gem 'tzinfo'
+gem 'json'
+gem 'haml-rails'
+gem 'devise'
+gem 'bcrypt-ruby'
+gem 'jquery-rails', '2.0.2'
+gem 'rack-canonical-host'
+gem 'rollbar', '2.7.1'
+gem 'pg'
+gem 'friendly_id'
+gem 'font-awesome-sass'
+gem 'enumerize'  # enumerated attributes in activerecord
+gem 'colorize'
+gem 'actionmailer_inline_css'
+gem 'ahoy_matey'
+gem 'groupdate'
+gem 'chartkick'
+gem 'pundit' # model based authorization
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0',          group: :doc
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-remote'
+  gem 'pry-stack_explorer'
+  gem 'pry-nav'
+  gem 'awesome_print'
+  gem 'rb-fsevent', require: false
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'rspec-wait'
+  gem 'shoulda'
 
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
-
+  # Visualize schema
+  gem 'railroady'
+end

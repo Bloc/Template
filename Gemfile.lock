@@ -5,15 +5,25 @@ GEM
       actionpack (= 4.1.12)
       actionview (= 4.1.12)
       mail (~> 2.5, >= 2.5.4)
+    actionmailer_inline_css (1.5.3)
+      actionmailer (>= 3.0.0)
+      nokogiri (>= 1.4.4)
+      premailer (>= 1.7.1)
     actionpack (4.1.12)
       actionview (= 4.1.12)
       activesupport (= 4.1.12)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
+    actionpack-action_caching (1.1.1)
+      actionpack (>= 4.0.0, < 5.0)
+    actionpack-page_caching (1.0.2)
+      actionpack (>= 4.0.0, < 5)
     actionview (4.1.12)
       activesupport (= 4.1.12)
       builder (~> 3.1)
       erubis (~> 2.7.0)
+    activejob_backport (0.0.3)
+      activesupport (>= 4.0.0)
     activemodel (4.1.12)
       activesupport (= 4.1.12)
       builder (~> 3.1)
@@ -21,42 +31,120 @@ GEM
       activemodel (= 4.1.12)
       activesupport (= 4.1.12)
       arel (~> 5.0.0)
+    activerecord-deprecated_finders (1.0.3)
     activesupport (4.1.12)
       i18n (~> 0.6, >= 0.6.9)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    addressable (2.4.0)
+    ahoy_matey (1.2.1)
+      addressable
+      browser (>= 0.4.0)
+      errbase
+      geocoder
+      rails
+      referer-parser (>= 0.3.0)
+      request_store
+      user_agent_parser
+      uuidtools
     arel (5.0.1.20140414130214)
+    awesome_print (1.1.0)
+    bcrypt (3.1.10)
+    bcrypt-ruby (3.1.5)
+      bcrypt (>= 3.1.3)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
+    browser (1.0.1)
     builder (3.2.2)
-    coffee-rails (4.0.1)
-      coffee-script (>= 2.2.0)
-      railties (>= 4.0.0, < 5.0)
-    coffee-script (2.4.1)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.10.0)
+    chartkick (1.2.4)
+    coderay (1.0.9)
+    colorize (0.5.8)
+    css_parser (1.3.4)
+      addressable
+    debug_inspector (0.0.2)
+    devise (3.5.2)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      responders
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
+    diff-lcs (1.2.5)
+    enumerize (0.6.1)
+      activesupport (>= 3.2)
+    errbase (0.0.3)
     erubis (2.7.0)
-    execjs (2.7.0)
+    font-awesome-sass (4.5.0)
+      sass (>= 3.2)
+    friendly_id (5.0.4)
+      activerecord (>= 4.0.0)
+    geocoder (1.2.12)
+    groupdate (2.1.0)
+      activerecord (>= 3.0.0)
+    haml (4.0.7)
+      tilt
+    haml-rails (0.9.0)
+      actionpack (>= 4.0.1)
+      activesupport (>= 4.0.1)
+      haml (>= 4.0.6, < 5.0)
+      html2haml (>= 1.0.1)
+      railties (>= 4.0.1)
     hike (1.2.3)
+    html2haml (2.0.0)
+      erubis (~> 2.7.0)
+      haml (~> 4.0.0)
+      nokogiri (~> 1.6.0)
+      ruby_parser (~> 3.5)
+    htmlentities (4.3.2)
     i18n (0.7.0)
-    jbuilder (2.5.0)
-      activesupport (>= 3.0.0, < 5.1)
-      multi_json (~> 1.2)
-    jquery-rails (3.1.4)
-      railties (>= 3.0, < 5.0)
-      thor (>= 0.14, < 2.0)
+    jquery-rails (2.0.2)
+      railties (>= 3.2.0, < 5.0)
+      thor (~> 0.14)
     json (1.8.3)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+    method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
+    mini_portile2 (2.0.0)
     minitest (5.9.0)
     multi_json (1.12.1)
+    nokogiri (1.6.7.2)
+      mini_portile2 (~> 2.0.0.rc2)
+    orm_adapter (0.5.0)
+    pg (0.18.4)
+    premailer (1.7.3)
+      css_parser (>= 1.1.9)
+      htmlentities (>= 4.0.0)
+    protected_attributes (1.0.8)
+      activemodel (>= 4.0.1, < 5.0)
+    pry (0.9.12)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+    pry-nav (0.2.4)
+      pry (>= 0.9.10, < 0.11.0)
+    pry-rails (0.3.4)
+      pry (>= 0.9.10)
+    pry-remote (0.1.7)
+      pry (~> 0.9)
+      slop (~> 3.0)
+    pry-stack_explorer (0.4.9)
+      binding_of_caller (>= 0.7)
+      pry (~> 0.9.11)
+    puma (3.2.0)
+    pundit (1.1.0)
+      activesupport (>= 3.0.0)
     rack (1.5.5)
+    rack-canonical-host (0.0.8)
+      addressable
+      rack (~> 1.0)
     rack-test (0.6.3)
       rack (>= 1.0)
+    railroady (1.2.0)
     rails (4.1.12)
       actionmailer (= 4.1.12)
       actionpack (= 4.1.12)
@@ -67,24 +155,60 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.12)
       sprockets-rails (~> 2.0)
+    rails-observers (0.1.2)
+      activemodel (~> 4.0)
     railties (4.1.12)
       actionpack (= 4.1.12)
       activesupport (= 4.1.12)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (11.2.2)
-    rdoc (4.2.2)
-      json (~> 1.4)
-    sass (3.2.19)
-    sass-rails (4.0.5)
+    rb-fsevent (0.9.3)
+    referer-parser (0.3.0)
+    request_store (1.0.5)
+    responders (1.1.2)
+      railties (>= 3.2, < 4.2)
+    rollbar (2.7.1)
+      multi_json
+    rspec (3.0.0)
+      rspec-core (~> 3.0.0)
+      rspec-expectations (~> 3.0.0)
+      rspec-mocks (~> 3.0.0)
+    rspec-core (3.0.0)
+      rspec-support (~> 3.0.0)
+    rspec-expectations (3.0.4)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.0.0)
+    rspec-mocks (3.0.4)
+      rspec-support (~> 3.0.0)
+    rspec-rails (3.0.0)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 3.0.0)
+      rspec-expectations (~> 3.0.0)
+      rspec-mocks (~> 3.0.0)
+      rspec-support (~> 3.0.0)
+    rspec-support (3.0.4)
+    rspec-wait (0.0.7)
+      rspec (>= 2.11, < 3.4)
+    ruby_parser (3.7.2)
+      sexp_processor (~> 4.1)
+    sass (3.4.21)
+    sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
-      sass (~> 3.2.2)
-      sprockets (~> 2.8, < 3.0)
-      sprockets-rails (~> 2.0)
-    sdoc (0.4.1)
-      json (~> 1.7, >= 1.7.7)
-      rdoc (~> 4.0)
-    spring (1.7.1)
+      sass (~> 3.1)
+      sprockets (>= 2.8, < 4.0)
+      sprockets-rails (>= 2.0, < 4.0)
+      tilt (>= 1.1, < 3)
+    sexp_processor (4.6.0)
+    shoulda (3.5.0)
+      shoulda-context (~> 1.0, >= 1.0.1)
+      shoulda-matchers (>= 1.4.1, < 3.0)
+    shoulda-context (1.2.1)
+    shoulda-matchers (2.8.0)
+      activesupport (>= 3.0.0)
+    slop (3.6.0)
     sprockets (2.12.4)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -94,31 +218,58 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    sqlite3 (1.3.11)
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
-    turbolinks (2.5.3)
-      coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (3.0.0)
-      execjs (>= 0.3.0, < 3)
+    user_agent_parser (2.3.0)
+    uuidtools (2.1.3)
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  coffee-rails (~> 4.0.0)
-  jbuilder (~> 2.0)
-  jquery-rails
-  rails (= 4.1.12)
-  sass-rails (~> 4.0.3)
-  sdoc (~> 0.4.0)
-  spring
-  sqlite3
-  turbolinks
-  uglifier (>= 1.3.0)
+  actionmailer_inline_css
+  actionpack-action_caching
+  actionpack-page_caching
+  activejob_backport
+  activerecord-deprecated_finders
+  ahoy_matey
+  awesome_print
+  bcrypt-ruby
+  chartkick
+  colorize
+  devise
+  enumerize
+  font-awesome-sass
+  friendly_id
+  groupdate
+  haml-rails
+  jquery-rails (= 2.0.2)
+  json
+  pg
+  protected_attributes
+  pry-nav
+  pry-rails
+  pry-remote
+  pry-stack_explorer
+  puma
+  pundit
+  rack-canonical-host
+  railroady
+  rails (~> 4.1)
+  rails-observers
+  rake
+  rb-fsevent
+  rollbar (= 2.7.1)
+  rspec-rails (~> 3.0.0)
+  rspec-wait
+  sass-rails (~> 5.0.0.beta1)
+  shoulda
+  tzinfo
 
 BUNDLED WITH
    1.11.2
