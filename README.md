@@ -4,7 +4,9 @@ Use this template to spawn new applications at Bloc.
 
 ## Usage
 
-TODO
+```
+$ rails new myapp -m https://raw.githubusercontent.com/Bloc/Template/master/template.rb
+```
 
 # Archive
 
