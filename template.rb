@@ -5,6 +5,7 @@ def source_paths
     [File.expand_path(File.dirname(__FILE__))]
 end
 
+# Dependencies
 
 remove_file "Gemfile"
 run "touch Gemfile"
@@ -25,4 +26,13 @@ gem_group :development, :test do
   gem 'foreman'
   gem 'spring'
 end
+
+# Server
+copy_file 'Procfile'
+empty_directory 'script'
+inside 'script' do
+  copy_file 'dev_server'
+  run 'chmod a+x dev_server'
+end
+
 
