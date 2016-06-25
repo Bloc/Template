@@ -8,30 +8,42 @@ Use this template to spawn new applications at Bloc.
 $ rails new myapp -m https://raw.githubusercontent.com/Bloc/Template/master/template.rb
 ```
 
-# Archive
+## TODO
 
-## Stack
+[Sitepoint reference](https://www.sitepoint.com/rails-application-templates-real-world/)
+[Thor reference](https://www.sitepoint.com/introduction-thor/)
+
+### New Gemfile & other dependencies
 
 - Ruby 2.1.7
 - Rails 4.1
 - Postgres
-- Angular 1.4.7
+- foreman and .env files
 
-## Database
+### Session sharing w/ Bloc
+
+- include instructions for setting environment variables
+
+### Frontend
+
+- webpack config
+- Frontend stack: Angular 1.4.7 or React + Alt.js (?)
+
+### Configure & Create DB
 
 ```
 $ bin/rake db:create
 $ bin/rake db:schema:load
 ```
 
-## Get up and running
+### Set up default Procfile and script/dev_server
 
 ```
 $ bundle install
 $ bin/rails s
 ```
 
-## Deploying to heroku
+### app.json for easy heroku deployment
 
 ```
 $ heroku create my-app
@@ -40,15 +52,15 @@ $ heroku sharing:add accounts@trybloc.com -a my-app
 
 Then, transfer ownership via the heroku dashboard. [More info here](https://devcenter.heroku.com/articles/transferring-apps).
 
-## Ahoy
+### Ahoy
 
 TODO
 
-## Rollbar
+### Rollbar
 
 TODO
 
-## New Relic
+### New Relic
 
 TODO
 
