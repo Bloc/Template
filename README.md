@@ -17,8 +17,6 @@ $ rails new myapp -m https://raw.githubusercontent.com/Bloc/Template/master/temp
 ### New Gemfile & other dependencies
 
 - Ruby 2.1.7
-- Rails 4.1
-- Postgres
 - foreman and .env files
 
 ### Session sharing w/ Bloc
@@ -38,6 +36,8 @@ $ bin/rake db:schema:load
 ```
 
 ### Set up default Procfile and script/dev_server
+
+- use puma web server
 
 ```
 $ bundle install
