@@ -1,6 +1,12 @@
-# Bloc Template application
+# Bloc Rails application template
 
 Use this template to spawn new applications at Bloc.
+
+## Usage
+
+TODO
+
+# Archive
 
 ## Stack
 
