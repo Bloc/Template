@@ -11,6 +11,7 @@ $ rails new myapp -m https://raw.githubusercontent.com/Bloc/Template/master/temp
 ## TODO
 
 [Sitepoint reference](https://www.sitepoint.com/rails-application-templates-real-world/)
+
 [Thor reference](https://www.sitepoint.com/introduction-thor/)
 
 ### New Gemfile & other dependencies
